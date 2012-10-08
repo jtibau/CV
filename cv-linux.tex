@@ -1,0 +1,176 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[a4paper]{article}
+\usepackage[spanish]{babel}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Javier Alejandro Tibau Benítez}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer, science, hci, jtibau},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.1in}
+
+%\href{mailto:jtibau@espol.edu.ec}{\tt jtibau@espol.edu.ec} \\
+
+\section*{Personal}
+
+\begin{description}
+  \item [Fecha de Nacimiento] 28 de Enero de 1986
+  \item [Dirección de Domicilio] Urdesa, Calle Primera 1240
+  \item [Teléfono] 086709328
+  \item [Email] \href{mailto:jtibau@espol.edu.ec}{\tt jtibau@espol.edu.ec}
+\end{description}
+
+\section*{Educación}
+
+\begin{itemize}
+  \item Máster Universitario en Computación con Especialización en Visualización, Realidad Virtual e Interacción Gráfica. Universitat Politécnica de Catalunya, 2009 - 2010.
+  \item Ingeniero en Computación con Especialización en Sistemas Multimedia. Escuela Superior Politécnica del Litoral, 2003 - 2009.
+  \item Estudiante de intercambio cultural, Little Rock Central High School, Arkansas, Estados Unidos, 2002 - 2003.
+\end{itemize}
+
+\section*{Experiencia Laboral}
+
+\begin{itemize}
+  \item Facultad de Ingeniería en Electricidad y Computación, ESPOL, Profesor Auxiliar. Mayo 2011 - Presente.
+    \begin{itemize}
+      \item Fundamentos de Programación
+      \item Estructuras de Datos
+      \item Programación Orientada a Objetos
+      \item Organización y Arquitectura de Computadores
+    \end{itemize}
+  \item Centro de Tecnologías de Información, ESPOL, Investigador. Enero 2011 - Presente.
+    \begin{itemize}
+      \item Propuestas de Proyectos de Realidad Virtual.
+      \item Configuración de un Laboratorio de Realidad Virtual.
+    \end{itemize}
+  \item Centro de Realidad Virtual de la UPC, Desarrollador. Mayo 2010 - Diciembre 2010.
+    \begin{itemize}
+      \item Continuación del proyecto realizado para la Tesis de Master. Se añadieron funcionalidades requeridas por el grupo de investigación auspiciante: Visualización de una interfaz con ventanas en un ambiente 3D, métodos de interacción en 3D, documentación e instrucciones de uso y desarrollo.
+    \end{itemize}
+  \item Centro de Tecnologías de Información, ESPOL, Asistente de Investigación. Junio 2008 - Agosto 2009.
+    \begin{itemize}
+      \item Inicio de desarrollo de un ambiente virtual, integrando dispositivos variados de realidad virtual: Gafas para visión estéreo, guantes, sensores de rastreo 3D.
+      \item Proyecto de Fondos Concursables VLIR-ESPOL: ``A Low Cost Interactive Whiteboard to Improve the use of Learning Software in Face-To-Face Lectures at ESPOL's Conference/Class Rooms''. Evaluamos y modificamos herramientas de presentación de diapositivas. En conjunto con el Nintendo Wii Remote como dispositivo de entrada, se propone el uso de estas herramientas como una alternativa de bajo costo a las pizarras interactivas.
+      \item Demostración tecnológica de Realidad Aumentada, orientada a niños y jóvenes, para la feria de ``Vínculos con la Comunidad, ESPOL 2008''. Desarrollamos un juego multi-jugador de piedra, papel o tijera utilizando Goblin XNA.
+      \item Desarrollo del portal web para la Red CEDIA (http://www.cedia.org.ec). El portal fue desarrollado con Joomla!.
+    \end{itemize}
+  \item Proyecto de Fondos Concursables VLIR-ESPOL: ``Evaluating the impact of using ICT tools- based on free and open source software - on the performance of public school students'', Asistente Administrativo y de Investigación. Agosto 2007 - Marzo 2008
+    \begin{itemize}
+      \item Coordinación logística de 4 talleres para niños de 9 a 11 años de edad, con un total de 74 niños.
+      \item Configuración y mantenimiento de los laboratorios y el software utilizado en los talleres. Incluyendo un laboratorio de clientes tontos con el ``Linux Terminal Server Project''.
+    \end{itemize}
+  \item Centro de Visión y Robótica (CVR-ESPOL), Asistente de Investigación y Administrador de Sistemas. Marzo 2006 - Marzo 2007
+    \begin{itemize}
+      \item Adaptación del Sistema ``Open Microscopy Environment'', de manera que soporte la internacionalización. Traducción al español del sistema.
+      \item Administración de un laboratorio multi-plataforma con autenticación por LDAP. Servicio técnico eventual a los usuarios del mismo. 
+    \end{itemize}
+\end{itemize}
+
+\section*{Proyectos Universitarios}
+
+\begin{itemize}
+  \item Tesis de Master, ``Algorithms for a Multi-Projector CAVE System''. Diseño y creación de un framework para facilitar el desarrollo de aplicaciones de Realidad Virtual. Con un estudio profundo del estado del arte, se basó el desarrollo en VR Juggler, implementando una capa de abstracción que automatiza el uso de dispositivos de entrada y salida así como la configuración de dichos dispositivos. El objetivo del proyecto era permitir la visualización de aplicaciones en un sistema CAVE de la UPC.
+  \item Proyecto de Tesis de Ingeniería. ``Análisis, Diseño e Implementación de un Sistema para Creación de Interfaces de Usuario Utilizando el Paradigma de Diagramas a Mano Alzada''. El sistema reconoce los dibujos realizados sobre una superficie táctil como una Tablet PC. Al ser reconocidos bajo el contexto de las Interfaces de Usuario, estas pueden ser mostradas como ventanas u otros objetos de la interfaz. Utilizamos JAVA como plataforma de desarrollo y el framework para reconocimiento de trazos LADDER.
+  \item Motor de Computación Distribuida. Utilizando JAVA RMI, como proyecto de la materia Sistemas Distribuidos. Desarrollamos un framework genérico y multi-plataforma para la distribución de tareas computacionales entre varios pares y esclavos.
+  \item Motor de ``Ray Tracing'', para la materia de Gráficos por Computadora 2. Utilizando C++ y FLTK. Se implementaron todos los pasos del proceso de ray tracing así como el parser para los archivos fuente siguiendo el formato de POV-Ray.
+\end{itemize}
+
+\section*{Otras Actividades}
+
+\begin{itemize}
+  \item Co-fundador de la primera comunidad de software libre en Guayaquil, en conjunto con compañeros de estudio y profesores de la universidad. Creamos KOKOA (http://www.kokoa.espol.edu.ec), la Comunidad de Software Libre de ESPOL. El objetivo de la comunidad es brindar apoyo e información relativa al software libre dentro de nuestra área de alcance.
+  \item Los logros más importantes de KOKOA, han sido la organización de tres Festivales de Instalación de Software Libre Latinoamericanos en Guayaquil, 2007, 2008 y 2009 (http://www.flisolgye.espol.edu.ec). Y organización en nuestra ciudad de la venida de Richard M. Stallman, el fundador de la Free Software Fundation, a Guayaquil.
+  \item Dictado de varios talleres como parte de la Comunidad KOKOA, entre ellos: Cursos Introductorios a GNU/Linux, Administración de Redes bajo GNU/Linux, Linux Terminal Server Project.
+  \item Miembro fundador de la Asociación de Software Libre del Ecuador (http://www.asle.ec)
+\end{itemize}
+
+\section*{Lenguajes}
+
+\begin{itemize}
+  \item Fluidez de habla inglesa y buen nivel de lectura y escritura en Inglés.
+  \item Nivel intermedio de Catalán y Fránces.
+\end{itemize}
+
+\bigskip
+
+%% Footer
+%\begin{center}
+%  \begin{footnotesize}
+%    Ultima Actualización: \today \\
+%    \href{\footerlink}{\texttt{\footerlink}}
+%  \end{footnotesize}
+%\end{center}
+
+\end{document}
